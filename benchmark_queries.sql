@@ -107,6 +107,5 @@ SELECT
 	percentile_disc(0.5) WITHIN GROUP (ORDER BY runtime) AS median_runtime
 FROM appdata.arrays_results;
 
-SELECT * FROM appdata.results;
-
+SELECT * FROM appdata.results ORDER BY median_runtime;
 
